@@ -5,18 +5,76 @@
 		<style>
 			div{
 			font-family:Arial, sans-serif;
-			font-size: 280px;
+			font-size: 28px;
 			font-weight: bold;
 			}
+				@media (min-width: 600px) {
+		body {
+			background-color: red;
+		}
+	}
+	
+	@media (max-width: 599px) {
+		body {
+			background-color: pink;
+		}
+	}
 		</style>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<style>
+h1 {
+  border-style: outset;
+  border-width: 7px;
+  border-color: blue;
+}
+
+div {
+  border-style: outset;
+  border-width: 7px;
+  border-color: coral;  
+}
+#fname,#lname {
+  background-color: pink;
+}
+.container {
+  display: flex;
+  flex-wrap:wrap;
+  justify-content:space-around;
+
+}
+</style>
 </head>
 <body>
 	<div>
 My name is Steph. What is your name?
 	</div>
-<h1>The input element</h1>
+	<div class="container">
+  <div class="row">
+    <div class="col">
+      1 of 3
+    </div>
+    <div class="col-6">
+      2 of 3 (wider)
+    </div>
+    <div class="col">
+      3 of 3
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      1 of 3
+    </div>
+    <div class="col-5">
+      2 of 3 (wider)
+    </div>
+    <div class="col">
+      3 of 3
+    </div>
+  </div>
+</div>
+<h1>Enter your name below</h1>
 
-<form action="file:///C:/Users/stephanie.shelton/lecture0/index3.html">
+<form action="file:///C:/Users/stephanie.shelton/lecture1/index3.html">
   <label for="fname">First name:</label>
   <input type="text" id="fname" name="fname"><br><br>
   <label for="lname">Last name:</label>
@@ -26,6 +84,22 @@ My name is Steph. What is your name?
 
 <p>Click the "Submit" button and the form-data will be sent to a page on the 
 server called "action_page.php".</p>
+
+<form action="file:///C:/Users/stephanie.shelton/lecture1/index3.html">
+  <input type="submit" value="next">
+</form>
+<form action="file:///C:/Users/stephanie.shelton/lecture1/index2.html">
+  <input type="submit" value="index2">
+</form>
+<form action="file:///C:/Users/stephanie.shelton/lecture1/index3.html">
+  <input type="submit" value="index3">
+</form>
+<form action="file:///C:/Users/stephanie.shelton/lecture1/index4.html">
+  <input type="submit" value="index4">
+</form>
+<form action="file:///C:/Users/stephanie.shelton/lecture1/index5.html">
+  <input type="submit" value="index5">
+</form>
 
 </body>
 </html>
